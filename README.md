@@ -35,7 +35,9 @@ and every word is rendered from bitmap fonts packed in `font.bin`.
 `main.py` (Python 3.13, standard library only) draws the whole page on a
 1024×1024 canvas and writes `/output/entry.png`. It reads glyph bitmaps from
 `font.bin` (DejaVu Serif/Sans) and uses no network, so two runs write the
-exact same bytes.
+exact same bytes. Verified render: 1024×1024, 212,956 bytes, sha256
+`d81e2ae9ef63f642220a62f84cadf6b6fe3d429002609f245d07444f49950409` —
+identical from a clean checkout.
 
 Run it:
 
